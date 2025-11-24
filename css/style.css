@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Product Grid */
+.product-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    padding: 15px;
+    border: 1px solid #ccc;
+    width: 180px;
+    text-align: center;
+}
+
+/* Form */
+.form-box {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Countdown */
+.timer-box {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.low-time {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { color: red; }
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background: white;
+    margin: 20% auto;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
